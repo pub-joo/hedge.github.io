@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+  <title>화면이름</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../src/css/common.css">
+  <script type="text/javascript" src="../../src/js/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="../../src/js/common.js"></script>
+</head>
+<body>
+    <!-- wrap -->
+    <div class="wrap"> <!-- 회색 배경 있는 경우 .bg01 추가-->
+        <!-- content -->
+        <div class="content">
+            <!-- top 고정 -->
+            <div class="top">
+                <div class="header">
+                    <div class="left">
+                        <a href="#none" class="btn"><span class="ico i24 back">이전 페이지로 이동</span></a>
+                        <h2 class="top-ttl">계정 관리</h2>
+                    </div>
+                    <div class="right">
+                        <button class="btn -bg01 -size01">문의하기</button>
+                    </div>
+                </div> 
+            </div>            
+            <!-- //top 고정 -->
+
+            <div class="c-inner bg00 hr">
+                <h3 class="fs16 ttl">기본 정보</h3>
+                <div class="forms">
+                    <div class="inp-txt -lb">
+                        <label for="txt01" class="lb-txt">이름</label>
+                        <input type="text" id="txt01" class="noto">
+                    </div>
+                    <div class="inp-txt -lb">
+                        <label for="txt02" class="lb-txt">휴대폰번호</label>
+                        <input type="number" id="txt02" class="noto">
+                        <div class="inp-btn">
+                            <button class="btn -sm -disabled">수정하기</button>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+
+            <div class="c-inner bg00 hr">
+                <div class="fs16 ttl">                    
+                    <a href="#none" class="link">소셜 로그인 관리  <span class="ico i24 arr">바로가기</span></a>
+                </div>
+                <div class="join-info">
+                    <span class="join-id">
+                        <span class="ico i20 kakao">카카오</span>
+                        hedge@naver.commo
+                    </span>
+                    <span class="join-txt">23.01.26 카카오 간편가입</span>
+                </div>
+            </div>
+
+            <div class="c-inner bg00 hr">
+                <h3 class="fs16 ttl">알림</h3>
+                <div class="forms">
+                    <div class="forms-wrap">
+                        <span class="txt">마케팅 정보 수신 설정</span>
+                        <span class="switch">
+                            <input type="checkbox" name="onoff-switch" id="onoff-switch1" />
+                            <label for="onoff-switch1"></label>
+                        </span>
+                    </div>
+                    <div class="quit-link tar">
+                        <a href="#none" class="btn">탈퇴하기<span class="ico i20 arr02">바로가기</span></a>
+                    </div>
+                </div>       
+            </div>
+
+            
+            <div class="btm-btn">
+                <div class="wrap-btm-btn">
+                    <!-- <span><button class="btn -lg -disabled">취소</button></span> -->
+                    <span><button class="btn -lg -primary">저장</button></span>
+                </div>
+            </div>
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

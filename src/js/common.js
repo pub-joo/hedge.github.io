@@ -16,7 +16,7 @@ window.onload = function(){
 		$('.menu-wrap').stop().show().animate({"right":"0"},300);
         $('.menu-dim').fadeIn(300);
 	}); 
-    $('.menu-close').click(function(){
+    $('.menu-close, .menu-dim').click(function(){
 		$('.menu-wrap').stop().animate({"right":"-100%"},300).hide(300);
         $('.menu-dim').fadeOut(300);
 	}); 
