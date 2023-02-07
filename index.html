@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+  <title>퍼블리싱 현황판</title>
+  <script src="js/jquery-3.4.1.js"></script>
+  <style type="text/css">
+    /* reset */
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0; padding:0; border:0 none;font-size:12px; line-height:1.5; font-family:'맑은 고딕',dotum,sans-serif; color:#666;}
+    table{border-collapse:collapse; border-spacing:0; width:100%;}
+    caption {visibility:hidden; overflow:hidden; display:none;}
+    legend{position:absolute; top:0; left:0; width:0; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0;}
+    .tit {height:20px; font-size:18px; font-weight:bold; padding:15px 0 10px; text-align:center;}
+    th {height:23px; background-color:#cdcdcd; border:1px solid #b5b5b5; padding:2px 5px 3px; text-align:center; color:#000;}
+    td {border-bottom:1px solid #c9c9c9; border-right:1px solid #c9c9c9; height:15px; padding:2px 10px 3px; font-size:12px; word-break:break-all;}
+    td.first {border-right:1px solid #c9c9c9; border-bottom:2px solid #c9c9c9; font-weight:bold;}
+    td.last {border-bottom:2px solid #c9c9c9;}
+    td:first-child{border-left:1px solid #c9c9c9;}
+    a{color:#000; text-decoration:none;}
+    a:hover,a:active,a:focus{color:#000; text-decoration:underline;}
+    .wrap{width:1000px; padding:20px; margin:0 auto;}
+    .font_01 {color:#a1a1a1;}
+    .font_02 {font-weight:bold;}
+    .font_03 {color:#00f;}
+    .font_04 {color:#f00;}
+    .font_05{color:#909; font-weight:bold;}
+    .tac{text-align: center;}
+    .tbl-top{line-height: 26px; padding-bottom: 10px;}
+    .tbl-top:after{display: block; content: ''; clear: both;}
+    .tbl-top .fl{float: left;}
+    .tbl-top .fr{float: right;}
+    </style>
+    <script type="text/javascript">
+      $(function(){
+        $(".table colgroup").prepend("<col width='50px' />");
+        $(".table thead tr").prepend("<th scope='col'>No</th>");
+        for(i=0; i <= $(".table tbody tr").length; i++)
+        $(".table tbody tr:nth-child("+ i+")").prepend("<td class='tac'>"+i+"</td>");
+      });
+    </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="tit">퍼블리싱 현황판 test2</div>
+    <div class="tbl-top">
+      <div class="fl">
+        -
+      </div>
+      <div class="fr">
+        -
+      </div>
+    </div>
+    <table class="table">
+      <caption>퍼블리싱 메뉴 구조</caption>
+      <colgroup>
+        <col width="100px" />
+        <col width="" />
+        <col width="" />
+        <col width="" />
+        <col width="" />
+        <col width="" />
+        <col width="" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">Depth 1</th>
+          <th scope="col">Depth 2</th>
+          <th scope="col">Depth 3</th>
+          <th scope="col">Depth 4</th>
+          <th scope="col">T/L</th>
+          <th scope="col">파일명</th>
+          <th scope="col">Comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>공통</td>
+          <td>팝업</td>
+          <td></td>
+          <td></td>
+          <td align="center"></td>
+          <td><a href="html/popup.html" target="_blank">popup.html</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>포탈</td>
+          <td>메인</td>
+          <td></td>
+          <td></td>
+          <td align="center"></td>
+          <td><a href="html/main.html" target="_blank">main.html</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>포탈</td>
+          <td>메인</td>
+          <td>좌측 메뉴 케이스 정리</td>
+          <td></td>
+          <td align="center"></td>
+          <td><a href="html/main_lnb.html" target="_blank">main_lnb.html</a></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
